@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Payment</title>
+</head>
+
+<body>
+    <div class="bodyPayment">
+        <div class="title">
+            <h1>Payment from example</h1>
+        </div>
+        <div class="creditData">
+            <div class="alertData">
+                <p>Some fields are missing</p>
+            </div>
+            <div class="data">
+                <fieldset class="card">
+                    <p>Card #</p>
+                    <input type="text" placeholder="XXXXXXXXXXXXXXXXXXXXX">
+                </fieldset>
+                <fieldset class="CVC">
+                    <p>CVC #</p>
+                    <input type="text" placeholder="0000">
+                </fieldset>
+                <fieldset class="amount">
+                    <p>Amaunt $</p>
+                    <input type="text" placeholder="amaunt">
+                </fieldset>
+            </div>
+        </div>
+        <div class="content">
+            <div class="leftContent">
+                <fieldset class="firstName">
+                    <p>First Name</p>
+                    <input type="text">
+                </fieldset>
+                <fieldset class="city">
+                    <p>City</p>
+                    <input type="text">
+                </fieldset><p>We accept:</p>
+                <fieldset class="typeOfCard">                
+                    <input type="radio" name="banco"><i class="fa-brands fa-cc-mastercard" style="color: white;"></i>
+                    <input type="radio" name="banco"><i class="fa-brands fa-cc-visa" style="color: white;"></i>
+                    <input type="radio" name="banco"><i class="fa-brands fa-cc-diners-club" style="color: white;"></i>
+                    <input type="radio" name="banco"><i class="fa-brands fa-cc-amazon-pay" style="color: white;" ></i>
+                </fieldset>
+            </div>
+            <div class="rightContent">
+                <fieldset class="lastName">
+                    <p>Last Name</p>
+                    <input type="text">
+                </fieldset>
+                <div class="location">
+                    <fieldset class="state">
+                        <p>State</p>
+                        <select>
+                            <option>cama</option>
+                            <option>baño</option>
+                            <option>Cocina</option>
+                            <option>escritorio</option>
+                            <option>no te engañes no sales de esos 4 :b</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="postalCode">
+                        <p>Postal Code</p>
+                        <input type="text">
+                    </fieldset>
+                </div>
+                <fieldset class="message">
+                    <p>Message</p>
+                    <textarea rows="5" cols="35" placeholder="Aqui puedes poner quejas que nadie lee XD"></textarea>
+                </fieldset>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="cancel">
+                <p>Cancel</p>
+            </button>
+            <button class="send">
+                <p>Send</p>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
